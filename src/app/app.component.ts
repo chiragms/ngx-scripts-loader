@@ -13,7 +13,7 @@ export class AppComponent {
   jQueryLoaded = false;
   bsLoaded = false;
 
-  angularModuleCode = `import { NgxScriptsLoaderModule } from 'projects/ngx-scripts-loader/src/lib/ngx-scripts-loader.module';
+  angularModuleCode = `import { NgxScriptsLoaderModule } from 'ngx-scripts-loader';
 
 @NgModule({
   declarations: [
