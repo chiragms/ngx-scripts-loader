@@ -1,1 +1,50 @@
-<button (click)="loadJquery()">Load jQuery</button>
+<div class="container">
+    <div class="row text-center">
+        <div class="col mt-5 pt-5">
+            <div class="mb-4">
+                <h3>Scripts Loader</h3>
+                <p>Programatically load one or more scripts/styles</p>
+            </div>
+            <button class="mr-3 round-btn align-top"
+                [ngClass]="{'btn-primary':!jQueryLoaded, 'btn-success':jQueryLoaded}" (click)="loadJquery()">Load
+                jQuery</button>
+
+            <div class="row">
+                <div class="col col-12 col-md-6 offset-md-3">
+                    <div class="service-doc mt-5 pt-5">
+                        <h4>Installation</h4>
+                        <div>---</div>
+                        <h6 class="mb-1">1. Install package</h6>
+                        <code>npm install @chiragms/ngx-scripts-loader</code>
+                        <h6 class="mb-0 mt-4">2. Import module</h6>
+                        <div class="text-left">
+                            <pre>
+                                <code [highlight]="angularModuleCode" [languages]="['typescript']" [lineNumbers]="true"></code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 col-md-6 offset-md-3">
+                    <div class="service-doc mt-5">
+                        <h4>Usage</h4>
+                        <div>---</div>
+                        <div class="text-left">
+                            <pre>
+                                <code [highlight]="loadCode" [languages]="['javascript']" [lineNumbers]="true"></code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 col-md-6 offset-md-3">
+                    <div class="service-doc mt-5">
+                        <p>Made with ❤ by ChiragMS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
