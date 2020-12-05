@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxScriptsLoaderService } from 'projects/ngx-scripts-loader/src/lib/ngx-scripts-loader.service';
+import { NgxScriptsLoaderService } from 'projects/@chiragms/ngx-scripts-loader/src/lib/ngx-scripts-loader.service';
 
 declare var $: any;
 
