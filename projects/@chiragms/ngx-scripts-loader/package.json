@@ -1,5 +1,5 @@
 {
-  "name": "ngx-scripts-loader",
+  "name": "@chiragms/ngx-scripts-loader",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.1.6",

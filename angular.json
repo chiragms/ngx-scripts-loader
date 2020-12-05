@@ -129,36 +129,36 @@
     },
     "@chiragms/ngxScriptsLoader": {
       "projectType": "library",
-      "root": "projects/ngx-scripts-loader",
-      "sourceRoot": "projects/ngx-scripts-loader/src",
+      "root": "projects/@chiragms/ngx-scripts-loader",
+      "sourceRoot": "projects/@chiragms/ngx-scripts-loader/src",
       "prefix": "ngx-cm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-scripts-loader/tsconfig.lib.json",
-            "project": "projects/ngx-scripts-loader/ng-package.json"
+            "tsConfig": "projects/@chiragms/ngx-scripts-loader/tsconfig.lib.json",
+            "project": "projects/@chiragms/ngx-scripts-loader/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-scripts-loader/tsconfig.lib.prod.json"
+              "tsConfig": "projects/@chiragms//ngx-scripts-loader/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-scripts-loader/src/test.ts",
-            "tsConfig": "projects/ngx-scripts-loader/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-scripts-loader/karma.conf.js"
+            "main": "projects/@chiragms/ngx-scripts-loader/src/test.ts",
+            "tsConfig": "projects/@chiragms/ngx-scripts-loader/tsconfig.spec.json",
+            "karmaConfig": "projects/@chiragms/ngx-scripts-loader/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-scripts-loader/tsconfig.lib.json",
-              "projects/ngx-scripts-loader/tsconfig.spec.json"
+              "projects/@chiragms/ngx-scripts-loader/tsconfig.lib.json",
+              "projects/@chiragms/ngx-scripts-loader/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
