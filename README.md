@@ -10,6 +10,7 @@ Load scripts and css programmatically and only when you need them.
 `npm install @chiragms/ngx-scripts-loader`
 
 ## Import Module
+```
 import { NgxScriptsLoaderModule } from 'ngx-scripts-loader';
 
 @NgModule({
@@ -25,8 +26,10 @@ import { NgxScriptsLoaderModule } from 'ngx-scripts-loader';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+```
 
 ## Usage
+```
 declare var $: any;
 ...
 @Component()
@@ -42,3 +45,4 @@ loadJquery() {
     $('p').hide();
   })
 }
+```
