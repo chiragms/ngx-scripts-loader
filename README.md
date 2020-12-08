@@ -10,7 +10,35 @@ Load scripts and css programmatically and only when you need them.
 `npm install @chiragms/ngx-scripts-loader`
 
 ## Import Module
-[gist]https://gist.github.com/chiragms/1fa5ade8b6f49d141d4d62d7def88692[/gist]
+import { NgxScriptsLoaderModule } from 'ngx-scripts-loader';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxScriptsLoaderModule, <--- import module
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
 ## Usage
-[gist]https://gist.github.com/chiragms/d4d9092ffa2386ae258a7c52df75f104[/gist]
+declare var $: any;
+...
+@Component()
+...
+constructor(
+  private scriptLoader: NgxScriptsLoaderService <--- inject the service
+) { }
+
+loadJquery() {
+  // load jQuery and then execute some code
+  this.scriptLoader.load('https://code.jquery.com/jquery-3.5.1.min.js').subscribe(result => {
+    // hide all p tags using jQuery
+    $('p').hide();
+  })
+}
