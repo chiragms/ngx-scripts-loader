@@ -8,6 +8,7 @@
             <button class="mr-3 round-btn align-top"
                 [ngClass]="{'btn-primary':!jQueryLoaded, 'btn-success':jQueryLoaded}" (click)="loadJquery()">Load
                 jQuery</button>
+            <p *ngIf="jQueryLoaded">Great! jQuery is loaded!</p>
 
             <div class="row">
                 <div class="col col-12 col-md-6 offset-md-3">
