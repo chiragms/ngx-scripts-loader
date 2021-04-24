@@ -4,7 +4,7 @@
 
 Load scripts and css programmatically and only when you need them.  
 
-[Documentation Here](https://ngxscriptsloader.chiragms.com/)
+[Documentation Here](https://chiragms.github.io/ngx-scripts-loader/)
 
 ## Installation
 `npm install @chiragms/ngx-scripts-loader`
